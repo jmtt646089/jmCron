@@ -31,7 +31,8 @@ def ping_health():
 ping_health()
 
 # Schedule to run every 5 minutes (adjust as needed)
-schedule.every(5).minutes.do(ping_health)
+# schedule.every(5).minutes.do(ping_health)
+schedule.every().day.at("20:00").do(ping_health)
 
 def run_scheduler():
     while True:
