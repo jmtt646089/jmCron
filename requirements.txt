@@ -1,0 +1,4 @@
+schedule
+fastapi
+uvicorn
+requests
